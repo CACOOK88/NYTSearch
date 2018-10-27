@@ -1,0 +1,10 @@
+.title, .jumbotron {
+    background-color: #3933FF;
+    color: white;
+    text-align: center;
+    height: 100px;
+
+}
+.card-body{
+    border: solid 1px grey;
+}

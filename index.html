@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NYT Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1 class="title">New York Times Search</h1>
-<form id="search-formj">
+<h1 class="title jumbotron">New York Times Search</h1>
+<form id="search-form">
+    <div class="card-header"> Search Parameter </div>
+    <div class="card-body">
     <label for="search-input">Search Term</label>
     <input type="text" id="search-input" required><br>
     <label for="number-input">Number of Records to Receive</label>
@@ -31,13 +35,17 @@
     <input type="text" id="end-input"><br>
     <input id="add-articles" type="submit" value="Search">
     <input id="clear-results" type="submit" value="Clear Results">
+</div>
+
 </form>
 <div class="article-display">
     <h3 class="article-header">Top Articles</h3>
     <div class="articles"></div>
 </div>
 
-
+<script src="app.js">
+</script>
     
 </body>
+
 </html>
