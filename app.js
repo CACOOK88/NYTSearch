@@ -12,7 +12,7 @@ $('#add-articles').on('click', function(e) {
 
     // key 6a8fa4e71f6a42288de758a939bcd3f5
     var queryURL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q='+ search +'&api-key=6a8fa4e71f6a42288de758a939bcd3f5'
-    'https://api.nytimes.com/svc/search/v2/articlesearch.json?q='+search+'&begin_date='+startYear+'0101&end_date='+endYear+'0101&api-key=6a8fa4e71f6a42288de758a939bcd3f5'
+    // 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q='+search+'&begin_date='+startYear+'0101&end_date='+endYear+'0101&api-key=6a8fa4e71f6a42288de758a939bcd3f5'
 
 
     $.ajax({
