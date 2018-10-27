@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NYT Search</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<h1 class="title">New York Times Search</h1>
+<form id="search-formj">
+    <label for="search-input">Search Term</label>
+    <input type="text" id="search-input" required><br>
+    <label for="number-input">Number of Records to Receive</label>
+    <select id="number-input">
+        <option value='1'>1</option>
+        <option value='2'>2</option>
+        <option value='3'>3</option>
+        <option value='4'>4</option>
+        <option value='5'>5</option>
+        <option value='6'>6</option>
+        <option value='7'>7</option>
+        <option value='8'>8</option>
+        <option value='9'>9</option>
+        <option value='10'>10</option>
+    </select><br>
+    <label for="start-input">Start Year (Optional): </label>
+    <input type="text" id="start-input"><br>
+    <label for="end-input">End Year (Optional): </label>
+    <input type="text" id="end-input"><br>
+    <input id="add-articles" type="submit" value="Search">
+    <input id="clear-results" type="submit" value="Clear Results">
+</form>
+<div class="article-display">
+    <h3 class="article-header">Top Articles</h3>
+    <div class="articles"></div>
+</div>
+
+
+    
+</body>
+</html>
