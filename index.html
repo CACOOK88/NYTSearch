@@ -10,14 +10,15 @@
     <link type="text/css" rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1 class="title jumbotron">New York Times Search</h1>
+<h1 class="title jumbotron">&#128240; New York Times Search</h1>
+<div class="card">
 <form id="search-form">
-    <div class="card-header"> Search Parameter </div>
+    <div class="card-header"><strong>&#128240; Search Parameter</strong>  </div>
     <div class="card-body">
-    <label for="search-input">Search Term</label>
-    <input type="text" id="search-input" required><br>
-    <label for="number-input">Number of Records to Receive</label>
-    <select id="number-input">
+    <label for="search-input">Search Term:</label><br>
+    <input type="text" id="search-input" class="col-lg-12" required><br>
+    <label for="number-input">Number of Records to Receive:</label><br>
+    <select id="number-input" class="col-lg-12">
         <option value='1'>1</option>
         <option value='2'>2</option>
         <option value='3'>3</option>
@@ -29,19 +30,30 @@
         <option value='9'>9</option>
         <option value='10'>10</option>
     </select><br>
-    <label for="start-input">Start Year (Optional): </label>
-    <input type="text" id="start-input"><br>
-    <label for="end-input">End Year (Optional): </label>
-    <input type="text" id="end-input"><br>
+    <label for="start-input">Start Year (Optional): </label><br>
+    <input type="text" id="start-input" class="col-lg-12"><br>
+    <label for="end-input">End Year (Optional): </label><br>
+    <input type="text" id="end-input" class="col-lg-12"><br><br>
     <input id="add-articles" type="submit" value="Search">
     <input id="clear-results" type="submit" value="Clear Results">
 </div>
 
 </form>
-<div class="article-display">
-    <h3 class="article-header">Top Articles</h3>
-    <div class="articles"></div>
 </div>
+<div class="card">
+    <div class="article-display card-header">
+        <h3 class="article-header"><strong>&#128240; Top Articles</strong></h3>
+    </div>
+    <div class="articles card-body">
+        
+    </div>
+</div>
+
+<footer>
+    <h4>Made with lots of &hearts; </h4>
+</footer>
+
+
 
 <script src="app.js">
 </script>
